@@ -25,23 +25,23 @@ SCREEN_SHOT_1:
 #
 
 SCREEN_SHOT_2: 
-![alt text](../master/Images_R_ScreenShots/1_2.png "SCREEN_SHOT_2")
+![alt text](../master/screen_captures/1_1.png "SCREEN_SHOT_2")
 #  
 
 SCREEN_SHOT_3: 
-![alt text](../master/Images_R_ScreenShots/1_3.png "SCREEN_SHOT_3")
+![alt text](../master/screen_captures/1_2.png "SCREEN_SHOT_3")
 #  
 
 SCREEN_SHOT_4: 
-![alt text](../master/Images_R_ScreenShots/1_4.png "SCREEN_SHOT_4")
+![alt text](../master/screen_captures/1_3.png "SCREEN_SHOT_4")
 #  
 
 SCREEN_SHOT_5: 
-![alt text](../master/Images_R_ScreenShots/1_5.png "SCREEN_SHOT_5")
+![alt text](../master/screen_captures/1_4.png "SCREEN_SHOT_5")
 #  
 
 SCREEN_SHOT_6: 
-![alt text](../master/Images_R_ScreenShots/1_6.png "SCREEN_SHOT_6")
+![alt text](../master/screen_captures/1_5.png "SCREEN_SHOT_6")
 #  
 
 SCREEN_SHOT_7: 
