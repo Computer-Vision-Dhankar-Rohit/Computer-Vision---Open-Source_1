@@ -61,6 +61,22 @@ Thus to understand this output and utilize it for Prediction we - ```denormalize
 - Data Range == Initial RAW Data , MAX VALUE - MIN VALUE. 
 - Min Value of Data == Initial RAW Data , MIN VALUE. 
 
+#
+
+``$ y=\sum_{i=1}^n g(x_i) $``
+
+#
+
+|INPUT LAYER    |HIDDEN LAYER   |OUTPUT LAYER |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned |  |
+| col 2 is      | centered      |  |
+| zebra stripes | are neat      |  |
+
+
+
+
+
 
 
 
