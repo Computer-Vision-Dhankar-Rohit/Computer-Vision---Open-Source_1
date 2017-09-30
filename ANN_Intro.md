@@ -61,6 +61,18 @@ Thus to understand this output and utilize it for Prediction we - ```denormalize
 - Data Range == Initial RAW Data , MAX VALUE - MIN VALUE. 
 - Min Value of Data == Initial RAW Data , MIN VALUE. 
 
+### Data Inputs and Initial Values of WEIGHTS 
+#
+We look at some of these basic questions and try to answer them briefly ...   
+
+
+- What are WEIGHTS == 
+- What is the BIAS UNIT == 
+- What is a BIAS TERM == 
+- How does a NODE FIRE - whats an ACTIVATION FUCTION 
+- How is ACTIVATION related to the SIGMOID FUNCTION
+- How is the ANN 
+
 #
 
 Test --- 
