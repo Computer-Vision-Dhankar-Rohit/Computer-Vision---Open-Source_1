@@ -22,6 +22,25 @@ We shall code and implement ANN's with both R and Python.
 - Priori or Prior Threshold values => Above or below certain priorly decided value  
 presume we have Car >0.55 and NO Car < 0.54 . This shall help us encode the Categorical outputs.  
 
+- Completely Connected ANN => All nodes from the INPUT LAYER  are CONNECTED to All NODES of the   
+HIDDEN LAYER and also All NODES of each HIDDEN LAYER are connected to all nodes of next hidden  
+layer which are in turn connected to all Nodes of OUTPUT Layer .   
+Nodes within the same layer are NOT Connected to each other.   
+Each Connection between Nodes has a WEIGHT == W1A , associated with it.  
+
+- Feed Forward ANN => Information flows only in the Forward direction , its Fed Forward Only .  
+
+- Number of Input Nodes => Usually equal to Number of INDEPENDENT VARIABLES being used to PREDICT   
+or CLASSIFY the DEPENDENT VARIABLE.  
+
+- TBD 
+
+- TBD
+
+
+- TBD 
+
+
 #
 
 For ANN's all attribute values are to be provided between the Minimum 0 and Maximum 1 .  
@@ -36,7 +55,10 @@ Thumb rule is to have as many NODES in OutPut Layer as there are DEPENDENT Varia
 
 #
 
-Test 
+The OutPut of ANN's Output layer NODE always lies between RANGE - 0 and 1.   
+Thus to understand this out and utilize it for Prediction we - ```denormalize --- PRED VALUE = Output( Data Range ) + Min Value of Data```   
+
+
 
 #
 
