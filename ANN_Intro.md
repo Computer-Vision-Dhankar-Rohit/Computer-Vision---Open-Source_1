@@ -56,7 +56,11 @@ Thumb rule is to have as many NODES in OutPut Layer as there are DEPENDENT Varia
 #
 
 The OutPut of ANN's Output layer NODE always lies between RANGE - 0 and 1.   
-Thus to understand this out and utilize it for Prediction we - ```denormalize --- PRED VALUE = Output( Data Range ) + Min Value of Data```   
+Thus to understand this output and utilize it for Prediction we - ```denormalize --- PRED VALUE = Output( Data Range ) + Min Value of Data```   
+- Output == Continous decimal value between - 0 to 1 . 
+- Data Range == Initial RAW Data , MAX VALUE - MIN VALUE. 
+- Min Value of Data == Initial RAW Data , MIN VALUE. 
+
 
 
 
