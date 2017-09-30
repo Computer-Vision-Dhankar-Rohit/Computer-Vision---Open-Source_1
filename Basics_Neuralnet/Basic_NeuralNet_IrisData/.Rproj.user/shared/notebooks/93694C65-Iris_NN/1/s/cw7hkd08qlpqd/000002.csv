@@ -1,0 +1,4 @@
+"0","# Create a SAMPLE Creation helper "
+"0","samp<-c(sample(1:50,25), sample(51:100,25), sample(101:150,25))"
+"0","## Code Source -- https://rweb.stat.umn.edu/R/library/nnet/html/predict.nnet.html"
+"0","        "

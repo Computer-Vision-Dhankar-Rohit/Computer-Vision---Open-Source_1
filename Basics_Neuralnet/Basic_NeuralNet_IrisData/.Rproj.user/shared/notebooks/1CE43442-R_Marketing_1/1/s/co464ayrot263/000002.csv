@@ -1,0 +1,42 @@
+"0","```r
+# Now to multiply TWO Columns of the DF 
+# Also called COLUMNAR VECTORS 
+# Again start the clock!
+ptm <- proc.time()
+mdf$gross_sale<- mdf$p_sale_count*mdf$p_sale_cost
+proc.time() - ptm 
+```"
+"1","   user  system elapsed 
+  0.008   0.004   0.007 
+"
+"0","```r
+#
+str(mdf)
+```"
+"1","'data.frame':	15000 obs. of  6 variables:
+ $ cty_name    : Factor w/ 10 levels \"CTY_1\",\"CTY_10\",..: 1 1 1 1 1 1 1 1 1 1 ...
+ $ country_name: Factor w/ 10 levels \"AUS\",\"BRZ\",\"CAN\",..: 5 5 5 5 5 5 5 5 5 5 ...
+ $ p_sale_count: num  106 116 108 118 119 ...
+ $ p_sale_cost : num  117 112 119 120 114 ...
+ $ var_dates   : Date, format: \"2000-01-01\" \"2000-01-02\" \"2000-01-03\" \"2000-01-04\" ...
+ $ gross_sale  : num  12401 13004 12838 14124 13572 ...
+"
+"0","```r
+#
+summary(mdf)
+```"
+"1","    cty_name     country_name   p_sale_count      p_sale_cost         var_dates            gross_sale      
+ CTY_1  :1500   AUS    :1500   Min.   :  5.042   Min.   :   65.06   Min.   :2000-01-01   Min.   :    1007  
+ CTY_10 :1500   BRZ    :1500   1st Qu.: 29.620   1st Qu.:  834.79   1st Qu.:2001-01-07   1st Qu.:   35315  
+ CTY_2  :1500   CAN    :1500   Median :100.839   Median : 2339.83   Median :2002-01-15   Median :  247960  
+ CTY_3  :1500   FRA    :1500   Mean   :143.938   Mean   : 7763.81   Mean   :2002-01-15   Mean   : 1557641  
+ CTY_4  :1500   IND    :1500   3rd Qu.:209.595   3rd Qu.:13708.06   3rd Qu.:2003-01-22   3rd Qu.: 1116263  
+ CTY_5  :1500   MEX    :1500   Max.   :619.898   Max.   :36937.84   Max.   :2004-01-30   Max.   :22481409  
+ (Other):6000   (Other):6000                                                                               
+"
+"0","```r
+#
+write.csv(mdf,file=\"Mkt_DATA_Files/mdf.csv\") 
+## Writes to Sub Directory - DATA_Files
+#
+```"

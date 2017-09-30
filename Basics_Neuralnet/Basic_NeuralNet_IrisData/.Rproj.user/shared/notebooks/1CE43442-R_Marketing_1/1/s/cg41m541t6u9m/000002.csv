@@ -1,0 +1,39 @@
+"0","```r
+# Start the clock!
+ptm <- proc.time()
+vec_gross_sale <- p_sale_count_rnd*p_sale_cost_rnd
+summary(vec_gross_sale)
+```"
+"1","    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+     986    35190   247900  1558000  1115000 22470000 
+"
+"0","```r
+proc.time() - ptm 
+```"
+"1","   user  system elapsed 
+  0.024   0.012   0.031 
+"
+"0","```r
+#
+# As seen below in our case 
+# ELAPSED time - 1st 0.011 , 2nd - 0.012
+# Thus the WALL CLOCK or REAL / ELAPSED 
+# timings are almost same . 
+#
+# The USER TIME and SYSTEM TIME's in our case 
+# add upto - 
+# 1st - 0.008
+# 2nd - 0.012
+# Thus it would seem we are better off 
+# with Vector Multiplication
+# But we also need to consider 
+# once we have the \"vec_gross_sale\" 
+# we will need to add it to out \"mdf\"
+# Kindly also note the Timings will
+# differ for each system - also for each run 
+# of the chunk of code on same sys
+# Definition of user Time --- The ‘user time’ is the CPU time 
+# charged for execution of user instructions of the calling process.
+#
+# REFER- https://stat.ethz.ch/R-manual/R-devel/library/base/html/proc.time.html
+```"

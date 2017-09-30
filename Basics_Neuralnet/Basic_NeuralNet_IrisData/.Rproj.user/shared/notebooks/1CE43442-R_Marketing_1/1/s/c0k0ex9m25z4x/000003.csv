@@ -1,0 +1,50 @@
+"0","```r
+#
+length(mdf$cty_name)
+```"
+"1","[1] 15000
+"
+"0","```r
+#
+summary(mdf) # Summary of DF
+```"
+"1","    cty_name     country_name  p_sale_count_rnd p_sale_cost_rnd      var_dates         
+ CTY_1  :1500   AUS    :1500   Min.   :  5.0    Min.   :   65.06   Min.   :2000-01-01  
+ CTY_10 :1500   BRZ    :1500   1st Qu.: 30.0    1st Qu.:  834.78   1st Qu.:2001-01-07  
+ CTY_2  :1500   CAN    :1500   Median :101.0    Median : 2339.83   Median :2002-01-15  
+ CTY_3  :1500   FRA    :1500   Mean   :143.9    Mean   : 7763.81   Mean   :2002-01-15  
+ CTY_4  :1500   IND    :1500   3rd Qu.:210.0    3rd Qu.:13708.05   3rd Qu.:2003-01-22  
+ CTY_5  :1500   MEX    :1500   Max.   :620.0    Max.   :36937.84   Max.   :2004-01-30  
+ (Other):6000   (Other):6000                                                           
+"
+"0","```r
+#
+str(mdf) # Structure of DF
+```"
+"1","'data.frame':	15000 obs. of  5 variables:
+ $ cty_name        : Factor w/ 10 levels \"CTY_1\",\"CTY_10\",..: 1 1 1 1 1 1 1 1 1 1 ...
+ $ country_name    : Factor w/ 10 levels \"AUS\",\"BRZ\",\"CAN\",..: 5 5 5 5 5 5 5 5 5 5 ...
+ $ p_sale_count_rnd: num  106 116 108 118 119 101 111 118 111 109 ...
+ $ p_sale_cost_rnd : num  117 112 119 120 114 ...
+ $ var_dates       : Date, format: \"2000-01-01\" \"2000-01-02\" \"2000-01-03\" \"2000-01-04\" ...
+"
+"0","```r
+# #
+#Explicitly check the Class and Typeof 
+class(mdf$cty_name);class(mdf$country_name);class(mdf$var_dates)
+```"
+"1","[1] \"factor\"
+[1] \"factor\"
+[1] \"Date\"
+"
+"0","```r
+#
+typeof(mdf$cty_name);typeof(mdf$country_name);typeof(mdf$var_dates)
+```"
+"1","[1] \"integer\"
+[1] \"integer\"
+[1] \"integer\"
+"
+"0","```r
+ 
+```"

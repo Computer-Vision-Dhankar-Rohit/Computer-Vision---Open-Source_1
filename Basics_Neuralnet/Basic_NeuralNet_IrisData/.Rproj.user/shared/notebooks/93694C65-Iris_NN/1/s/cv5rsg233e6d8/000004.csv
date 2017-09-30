@@ -1,0 +1,7 @@
+"0","# Another simpler code chunk ... Basic Classifier NN "
+"0","iris$Species.Class <- 0"
+"0","iris$Species.Class[iris$Species == ""versicolor""] <- 1"
+"0","iris$Species.Class[iris$Species == ""virginica""] <- 2"
+"0","nn.1 <- neuralnet(Species.Class ~ Sepal.Width + Sepal.Length + Petal.Width + Petal.Length,"
+"0","                  data = iris, hidden = 2)"
+"0","plot(nn.1)"

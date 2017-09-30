@@ -1,0 +1,159 @@
+"0","```r
+# Simulating Synthetic Data 
+# Set Seed -- ensure reproducible results 
+set.seed(123)
+# Presume a retail stores chain called - Mkt , having 200 Stores globally
+# Each Country has a store within their capital city
+# Do consider this code is NOT DRY :) 
+# I need to recode this bit keeping in mind the 
+# DONT REPEAT YOURSELF rule. 
+# Scalar Vector Constant - tweak to change DF Dimensions
+aa<-1500
+# Dates on which Data gathered 
+# we simulate 10 sets of dates 
+# when aa == 1500 , we get 150 dates in each set 
+# we then combine these sets into a DATES vector 
+# assign this DATES vector 
+dates_aa <-seq(as.Date(\"2000/1/1\"), by = \"day\", length.out = aa/10) 
+str(dates_aa)
+```"
+"1"," Date[1:150], format: \"2000-01-01\" \"2000-01-02\" \"2000-01-03\" \"2000-01-04\" \"2000-01-05\" \"2000-01-06\" \"2000-01-07\" \"2000-01-08\" ...
+"
+"0","```r
+date_temp_1<-dates_aa[aa/10]
+date_temp_1
+```"
+"1","[1] \"2000-05-29\"
+"
+"0","```r
+dates_bb <-seq(as.Date(date_temp_1), by = \"day\", length.out = aa/10)
+str(dates_bb) ; date_temp_2<-dates_bb[aa/10] ; date_temp_2
+```"
+"1"," Date[1:150], format: \"2000-05-29\" \"2000-05-30\" \"2000-05-31\" \"2000-06-01\" \"2000-06-02\" \"2000-06-03\" \"2000-06-04\" \"2000-06-05\" ...
+[1] \"2000-10-25\"
+"
+"0","```r
+dates_cc <-seq(as.Date(date_temp_2), by = \"day\", length.out = aa/10)
+str(dates_cc) ; date_temp_3<-dates_cc[aa/10] ; date_temp_3
+```"
+"1"," Date[1:150], format: \"2000-10-25\" \"2000-10-26\" \"2000-10-27\" \"2000-10-28\" \"2000-10-29\" \"2000-10-30\" \"2000-10-31\" \"2000-11-01\" ...
+[1] \"2001-03-23\"
+"
+"0","```r
+dates_dd <-seq(as.Date(date_temp_3), by = \"day\", length.out = aa/10)
+str(dates_dd) ; date_temp_4<-dates_dd[aa/10] ; date_temp_4
+```"
+"1"," Date[1:150], format: \"2001-03-23\" \"2001-03-24\" \"2001-03-25\" \"2001-03-26\" \"2001-03-27\" \"2001-03-28\" \"2001-03-29\" \"2001-03-30\" ...
+[1] \"2001-08-19\"
+"
+"0","```r
+dates_ee <-seq(as.Date(date_temp_4), by = \"day\", length.out = aa/10)
+str(dates_ee) ; date_temp_5<-dates_ee[aa/10] ; date_temp_5
+```"
+"1"," Date[1:150], format: \"2001-08-19\" \"2001-08-20\" \"2001-08-21\" \"2001-08-22\" \"2001-08-23\" \"2001-08-24\" \"2001-08-25\" \"2001-08-26\" ...
+[1] \"2002-01-15\"
+"
+"0","```r
+dates_ff <-seq(as.Date(date_temp_5), by = \"day\", length.out = aa/10)
+str(dates_ff) ; date_temp_6<-dates_ff[aa/10] ; date_temp_6
+```"
+"1"," Date[1:150], format: \"2002-01-15\" \"2002-01-16\" \"2002-01-17\" \"2002-01-18\" \"2002-01-19\" \"2002-01-20\" \"2002-01-21\" \"2002-01-22\" ...
+[1] \"2002-06-13\"
+"
+"0","```r
+dates_gg <-seq(as.Date(date_temp_6), by = \"day\", length.out = aa/10)
+str(dates_gg) ; date_temp_7<-dates_gg[aa/10] ; date_temp_7
+```"
+"1"," Date[1:150], format: \"2002-06-13\" \"2002-06-14\" \"2002-06-15\" \"2002-06-16\" \"2002-06-17\" \"2002-06-18\" \"2002-06-19\" \"2002-06-20\" ...
+[1] \"2002-11-09\"
+"
+"0","```r
+dates_hh <-seq(as.Date(date_temp_7), by = \"day\", length.out = aa/10)
+str(dates_hh) ; date_temp_8<-dates_hh[aa/10] ; date_temp_8
+```"
+"1"," Date[1:150], format: \"2002-11-09\" \"2002-11-10\" \"2002-11-11\" \"2002-11-12\" \"2002-11-13\" \"2002-11-14\" \"2002-11-15\" \"2002-11-16\" ...
+[1] \"2003-04-07\"
+"
+"0","```r
+dates_ii <-seq(as.Date(date_temp_8), by = \"day\", length.out = aa/10)
+str(dates_ii) ; date_temp_9<-dates_ii[aa/10] ; date_temp_9
+```"
+"1"," Date[1:150], format: \"2003-04-07\" \"2003-04-08\" \"2003-04-09\" \"2003-04-10\" \"2003-04-11\" \"2003-04-12\" \"2003-04-13\" \"2003-04-14\" ...
+[1] \"2003-09-03\"
+"
+"0","```r
+dates_jj <-seq(as.Date(date_temp_9), by = \"day\", length.out = aa/10)
+str(dates_jj) ; date_temp_10<-dates_jj[aa/10] ; date_temp_10
+```"
+"1"," Date[1:150], format: \"2003-09-03\" \"2003-09-04\" \"2003-09-05\" \"2003-09-06\" \"2003-09-07\" \"2003-09-08\" \"2003-09-09\" \"2003-09-10\" ...
+[1] \"2004-01-30\"
+"
+"0","```r
+# CHECK --- Could i have done this faster in Python ?? 
+# Func - seq(as.Date ...)
+# REFER -- https://stat.ethz.ch/R-manual/R-devel/library/base/html/seq.Date.html
+# Mkt Stores ID's == ms_ids
+ms_cntry1 <- c(rep(\"IND\",aa))
+ms_cntry2 <- c(rep(\"AUS\",aa))
+ms_cntry3 <- c(rep(\"NZ\",aa))
+ms_cntry4 <- c(rep(\"RUS\",aa))
+ms_cntry5 <- c(rep(\"USA\",aa))
+ms_cntry6 <- c(rep(\"MEX\",aa))
+ms_cntry7 <- c(rep(\"CAN\",aa))
+ms_cntry8 <- c(rep(\"BRZ\",aa))
+ms_cntry9 <- c(rep(\"SPN\",aa))
+ms_cntry10 <- c(rep(\"FRA\",aa))
+#
+# #
+ms_cty1 <- c(rep(\"CTY_1\",aa))
+ms_cty2 <- c(rep(\"CTY_2\",aa))
+ms_cty3 <- c(rep(\"CTY_3\",aa))
+ms_cty4 <- c(rep(\"CTY_4\",aa))
+ms_cty5 <- c(rep(\"CTY_5\",aa))
+ms_cty6 <- c(rep(\"CTY_6\",aa))
+ms_cty7 <- c(rep(\"CTY_7\",aa))
+ms_cty8 <- c(rep(\"CTY_8\",aa))
+ms_cty9 <- c(rep(\"CTY_9\",aa))
+ms_cty10 <- c(rep(\"CTY_10\",aa))
+# #
+# #
+# # Using - runif() # runif generates random deviates.
+psale_1 <- runif(aa,min=100,max=120) ## How many values Required the - N == aa
+psale_2 <- runif(aa,min=15,max=20) ##
+psale_3 <- runif(aa,min=25,max=30) ##
+psale_4 <- runif(aa,min=100,max=320) ##
+psale_5 <- runif(aa,min=5,max=140) ##
+psale_6 <- runif(aa,min=25,max=350) ##
+psale_7 <- runif(aa,min=100,max=620) ##
+psale_8 <- runif(aa,min=5,max=80) ##
+psale_9 <- runif(aa,min=25,max=90) ##
+psale_10 <- runif(aa,min=100,max=620) ##
+#
+# #
+# # Using - runif() # runif generates random deviates.
+pcost_1 <- runif(aa,min=111.49,max=120.56) ## How many values Required the - N == 5
+pcost_2 <- runif(aa,min=65.05,max=100.42) ## Random MINIMUM Value  == 65.05
+pcost_3 <- runif(aa,min=500.44,max=3000.78) ## Random MAXIMUM Value == 3000.78
+pcost_4 <- runif(aa,min=300.44,max=3000.78) ##
+pcost_5 <- runif(aa,min=400.44,max=3000.78) ##
+pcost_6 <- runif(aa,min=900.44,max=3000.78) ##
+pcost_7 <- runif(aa,min=1100.44,max=37000.78) ##
+pcost_8 <- runif(aa,min=1400.44,max=32000.78) ##
+pcost_9 <- runif(aa,min=1700.44,max=33000.78) ##
+pcost_10 <- runif(aa,min=5500.44,max=30000.78) ##
+#
+# Data Frame from NUMERIC and CHARACTER VECTORS
+#
+p_sale_count<-c(psale_1,psale_2,psale_3,psale_4,psale_5,psale_6,psale_7,psale_8,psale_9,psale_10)
+p_sale_count_rnd<-round(p_sale_count,digits = 0)
+p_sale_cost<-c(pcost_1,pcost_2,pcost_3,pcost_4,pcost_5,pcost_6,pcost_7,pcost_8,pcost_9,pcost_10)
+p_sale_cost_rnd<-round(p_sale_cost,digits = 2)                  
+# p_sale_count == PRODUCT Sale Count - How many Sold !
+#
+mdf <- data.frame(cty_name= c(ms_cty1,ms_cty2,ms_cty3,ms_cty4,ms_cty5,ms_cty6,ms_cty7,ms_cty8,ms_cty9,ms_cty10),
+                  country_name= c(ms_cntry1,ms_cntry2,ms_cntry3,ms_cntry4,ms_cntry5,ms_cntry6,ms_cntry7,ms_cntry8,ms_cntry9,ms_cntry10),
+                  p_sale_count_rnd, p_sale_cost_rnd , 
+                  var_dates=c(dates_aa,dates_bb,dates_cc,dates_dd,dates_ee,dates_ff,dates_gg,dates_hh,dates_ii,dates_jj))
+# #
+head(mdf,n=20)
+```"
