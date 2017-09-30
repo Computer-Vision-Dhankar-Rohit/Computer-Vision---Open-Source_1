@@ -4,25 +4,13 @@ Initial experiments mostly with curated code from OpenCV and DLIB examples .
 None of this code or examples are related to any client engagement.  
 #
 ### Pedestrian Detection 
-<<<<<<< HEAD
+
 According to Navneet Dalal - REFER SOURCE - Histogram of Oriented Gradients (HOG) for Object Detection -- Navneet DALAL , Bill TRIGGS and Cordelia SCHMID.   
 #
 
 
 
 #
-=======
-According to Navneet Dalal - 
-
-
-
-
-
-
-
-
->>>>>>> 3c6cf97eb92bce21f3a49b83a137f3cfea589dc6
-
 
 ### Images - 
 
