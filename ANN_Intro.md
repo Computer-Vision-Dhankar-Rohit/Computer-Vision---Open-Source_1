@@ -66,12 +66,40 @@ Thus to understand this output and utilize it for Prediction we - ```denormalize
 We look at some of these basic questions and try to answer them briefly ...   
 
 
-- What are WEIGHTS == 
-- What is the BIAS UNIT == 
-- What is a BIAS TERM == 
-- How does a NODE FIRE - whats an ACTIVATION FUCTION 
-- How is ACTIVATION related to the SIGMOID FUNCTION
-- How is the ANN 
+- What are WEIGHTS ? 
+- What is the BIAS UNIT ? 
+- What is a BIAS TERM ?
+- How does a NODE FIRE - whats an ACTIVATION FUCTION ?
+- How is ACTIVATION related to the SIGMOID FUNCTION ?
+- What is COST FUNCTION ? 
+- How to MINIMIZE COST FUNC. How to calculate DERIVATIVE ? 
+
+#
+
+
+#
+
+
+#
+
+
+#
+
+
+#
+
+
+#
+
+
+#
+
+
+#
+
+
+#
+
 
 #
 
