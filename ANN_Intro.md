@@ -10,16 +10,16 @@ As ANN's are a higher level abstraction of complexity - they follow the basic Cl
 We should look at the Multiclass Logistic Regression with help of R , before we can understand ANN's .   
 We shall code and implement ANN's with both R and Python.   
 #
-Some basic definitions :-   
+### Basic definitions :-  
 
-#
--- Nodes => Artificial Neurons   
 
--- Indicator-Flag-variables => Car-TRUE , No Car-FALE , Bus-FALSE ==  1,0,0   
+- Nodes => Artificial Neurons   
 
--- Continous Output => ANN nodes will output Continous values within Range - 0 to 1.   
+- Indicator-Flag-variables => Car-TRUE , No Car-FALE , Bus-FALSE ==  1,0,0   
 
--- Priori or Prior Threshold values => Above or below certain priorly decided value  
+- Continous Output => ANN nodes will output Continous values within Range - 0 to 1.   
+
+- Priori or Prior Threshold values => Above or below certain priorly decided value  
 presume we have Car >0.55 and NO Car < 0.54 . This shall help us encode the Categorical outputs.  
 
 #
