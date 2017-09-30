@@ -63,7 +63,16 @@ Thus to understand this output and utilize it for Prediction we - ```denormalize
 
 #
 
+Test --- 
+
+```math
+
+E = m c^2
+
+
 ``$ y=\sum_{i=1}^n g(x_i) $``
+
+```
 
 #
 
