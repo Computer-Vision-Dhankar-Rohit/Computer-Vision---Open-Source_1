@@ -123,7 +123,23 @@ Perceptron_Image_3:
 ![alt text](../master/screen_captures/Perceptron_3.png "Perceptron_Image_3")
 #  
 
+###  SUPPORT VECTOR MACHINES vs. NEURAL NETS 
+In lots of litterature sources i have read - the SVM is preffeered as a Classifier in place of the ANN .  
+Quoted verbatim from WIKI -- dated - 02 OCT 17 :-
+ 
+```
+Support vector machines and other, much simpler methods such as linear classifiers gradually overtook neural networks in machine learning popularity.
+
+Earlier challenges in training deep neural networks were successfully addressed with methods such as unsupervised pre-training, while available computing power increased through the use of GPUs and distributed computing. Neural networks were deployed on a large scale, particularly in image and visual recognition problems. This became known as "deep learning", although deep learning is not strictly synonymous with deep neural networks.
+```
+WIKI Image --- 
+
+SVM_WIKI_Image_1: 
+![alt text](../master/screen_captures/SVM_WIKI_Image_1.png "SVM_WIKI_Image_1")
 #  
+
+
+
 
 
 #
