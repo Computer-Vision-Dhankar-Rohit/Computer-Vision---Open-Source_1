@@ -33,13 +33,30 @@ Each Connection between Nodes has a WEIGHT == W1A , associated with it.
 - Number of INPUT LAYER NODES => Usually equal to Number of INDEPENDENT VARIABLES being used to PREDICT   
 or CLASSIFY the DEPENDENT VARIABLE.  
 
-- Number of UNITS or NODES within HIDDEN LAYERS => This number can vary , as an example we can have a HIDDEN Layer   
-with TWO Nodes and another with THREE etc .   
+- Number of UNITS or NODES within HIDDEN LAYERS => This number can vary , as an example we can have a HIDDEN Layer with TWO Nodes and another with THREE etc .   
 
 - THETA - [ Maths Symbols to be Inserted here ] the unknown PARAMETER or WEIGHT => Its similar in functionality to   
 the BETA or Error Term from LOGISTIC REGRESSION MODEL.   
 
 
+
+- TBD 
+
+- TBD 
+
+- TBD 
+
+
+- TBD 
+
+
+- TBD 
+
+
+- TBD 
+
+
+- TBD 
 
 - TBD 
 
@@ -77,7 +94,40 @@ We look at some of these basic questions and try to answer them briefly ...
 - What is COST FUNCTION ? 
 - How to MINIMIZE COST FUNC. How to calculate DERIVATIVE ? 
 
+### The XNOR Hypothesis 
+An example where both the INDEPENDENT Variables or FEATURES (X1 and X2) and the DEPENDENT or RESPONSE variables (y)  are CATEGORICAL BINARY. TRUE = 1 or FALSE =0 kind.  
+
+Thus - y - has the relation with X1 and X2 as shown below :-  
 #
+```
+
+y = 1 if X1 XNOR X2 =1 
+    0   otherwise
+
+if X1 and X2 are both =1 then y =1
+if X1 and X2 are both =0 then y =1  
+
+
+```
+#
+
+### The AND Hypothesis 
+
+#
+```
+
+y = 1 if X1 AND X2 =1 
+    0   otherwise
+
+if X1 and X2 are both =1    then y =1
+if X1 and X2 are both =0    then y =0
+if X1=1 and X2=0            then y =0
+if X1=0 and X2=1            then y =0
+
+
+```
+#
+
 
 
 #
