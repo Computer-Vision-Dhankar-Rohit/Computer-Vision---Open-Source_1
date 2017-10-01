@@ -116,11 +116,11 @@ Perceptron_Image_1:
 #
 
 Perceptron_Image_2: 
-![alt text](../master/screen_captures/Perceptron_2.jpg "Perceptron_Image_2")
+![alt text](../master/screen_captures/Perceptron_2.png "Perceptron_Image_2")
 #  
 
 Perceptron_Image_3: 
-![alt text](../master/screen_captures/Perceptron_3.jpg "Perceptron_Image_3")
+![alt text](../master/screen_captures/Perceptron_3.png "Perceptron_Image_3")
 #  
 
 #  
