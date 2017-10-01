@@ -13,7 +13,7 @@ We shall code and implement ANN's with both R and Python.
 ### Basic definitions :-  
 
 
-- Nodes => Artificial Neurons   
+- Nodes => Artificial Neurons a SINGLE NODE or MULTIPLE NODES aligned vertically form a INPUT / HIDDEN / OUTPUT Layer.   
 
 - Indicator-Flag-variables => Car-TRUE , No Car-FALE , Bus-FALSE ==  1,0,0   
 
@@ -30,12 +30,15 @@ Each Connection between Nodes has a WEIGHT == W1A , associated with it.
 
 - Feed Forward ANN => Information flows only in the Forward direction , its Fed Forward Only .  
 
-- Number of Input Nodes => Usually equal to Number of INDEPENDENT VARIABLES being used to PREDICT   
+- Number of INPUT LAYER NODES => Usually equal to Number of INDEPENDENT VARIABLES being used to PREDICT   
 or CLASSIFY the DEPENDENT VARIABLE.  
 
-- TBD 
+- Number of UNITS or NODES within HIDDEN LAYERS => This number can vary , as an example we can have a HIDDEN Layer   
+with TWO Nodes and another with THREE etc .   
 
-- TBD
+- THETA - [ Maths Symbols to be Inserted here ] the unknown PARAMETER or WEIGHT => Its similar in functionality to   
+the BETA or Error Term from LOGISTIC REGRESSION MODEL.   
+
 
 
 - TBD 
@@ -124,7 +127,7 @@ Perceptron_Image_3:
 #  
 
 ###  SUPPORT VECTOR MACHINES vs. NEURAL NETS 
-In lots of litterature sources i have read - the SVM is preffeered as a Classifier in place of the ANN .  
+In lots of litterature sources i have read - the SVM is preffered as a Classifier in place of the ANN .  
 Quoted verbatim from WIKI -- dated - 02 OCT 17 :-
  
 ```
