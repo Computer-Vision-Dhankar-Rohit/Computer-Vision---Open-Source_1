@@ -2,7 +2,7 @@
 
 #
 SCREEN_SHOT_1: 
-![alt text](../master/screen_captures/R_4.png "SCREEN_SHOT_1")
+![alt text](../screen_captures/R_4.png "SCREEN_SHOT_1")
 #
 
 SCREEN_SHOT_2: 
