@@ -100,6 +100,31 @@ We look at some of these basic questions and try to answer them briefly ...
 
 #
 
+### The PERCEPTRON 
+
+The litterature i have been able to read about PERCEPTRON's has ended up confusing me .   
+I site certain examples below :-  
+
+- A seemingly reputed and popular blog -- [http://neuralnetworksanddeeplearning.com/chap1.html]"http://neuralnetworksanddeeplearning.com/chap1.html" , doesnt provide a clear understanding of the PERCEPTRON .   
+- It mentions the word PERECPTRON - 99 times within Chapter-1 .  
+- It stated " So how do perceptrons work? A perceptron takes several binary inputs, x1,x2,…, and produces a single binary output".  
+- Seems incorrect to me - also other refrences to PERCEPTRON's are either dated or inconsistent or just passing remarks.  
+Thus we dont deal with PERECPTRON's.   
+#
+Perceptron_Image_1: 
+![alt text](../Basics_Neuralnet/images_own/Perceptron_1.png "Perceptron_Image_1")
+#
+
+Perceptron_Image_2: 
+![alt text](../Basics_Neuralnet/images_own/Perceptron_2.jpg "Perceptron_Image_2")
+#  
+
+Perceptron_Image_3: 
+![alt text](../Basics_Neuralnet/images_own/Perceptron_3.jpg "Perceptron_Image_3")
+#  
+
+#  
+
 
 #
 
