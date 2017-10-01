@@ -19,24 +19,19 @@ We shall code and implement ANN's with both R and Python.
 
 - Continous Output => ANN nodes will output Continous values within Range - 0 to 1.   
 
-- Priori or Prior Threshold values => Above or below certain priorly decided value  
-presume we have Car >0.55 and NO Car < 0.54 . This shall help us encode the Categorical outputs.  
+- Priori or Prior Threshold values => Above or below certain priorly decided value presume we have Car >0.55 and NO Car < 0.54 . This shall help us encode the Categorical outputs.  
 
-- Completely Connected ANN => All nodes from the INPUT LAYER  are CONNECTED to All NODES of the   
-HIDDEN LAYER and also All NODES of each HIDDEN LAYER are connected to all nodes of next hidden  
-layer which are in turn connected to all Nodes of OUTPUT Layer .   
-Nodes within the same layer are NOT Connected to each other.   
-Each Connection between Nodes has a WEIGHT == W1A , associated with it.  
+- Completely Connected ANN => All nodes from the INPUT LAYER  are CONNECTED to All NODES of the HIDDEN LAYER and also All NODES of each HIDDEN LAYER are connected to all nodes of next hidden layer which are in turn connected to all Nodes of OUTPUT Layer. Nodes within the same layer are NOT Connected to each other. Each Connection between Nodes has a WEIGHT == W1A , associated with it.  
 
 - Feed Forward ANN => Information flows only in the Forward direction , its Fed Forward Only .  
 
-- Number of INPUT LAYER NODES => Usually equal to Number of INDEPENDENT VARIABLES being used to PREDICT   
-or CLASSIFY the DEPENDENT VARIABLE.  
+- Number of INPUT LAYER NODES => Usually equal to Number of INDEPENDENT VARIABLES being used to PREDICT or CLASSIFY the DEPENDENT VARIABLE.  In theory, we can have infinite number of INPUT and/or OUTPUT LAYER NODES , but in application this is impractical as there shall be CONVERGENCE issues.  
 
-- Number of UNITS or NODES within HIDDEN LAYERS => This number can vary , as an example we can have a HIDDEN Layer with TWO Nodes and another with THREE etc .   
+- Number of HIDDEN LAYER NODES => This number can vary , as an example we can have a HIDDEN Layer with TWO Nodes and another with THREE etc .   
 
-- THETA - [ Maths Symbols to be Inserted here ] the unknown PARAMETER or WEIGHT => Its similar in functionality to   
-the BETA or Error Term from LOGISTIC REGRESSION MODEL.   
+- Number of OUTPUT LAYER NODES => Usually equal to Number of DEPENDENT or RESPONSE VARIABLE CLASSES. This is THREE in the case of the IRIS Dataset.  
+
+- THETA - [ Maths Symbols to be Inserted here ] the unknown PARAMETER or WEIGHT => Its similar in functionality to the BETA or Error Term from LOGISTIC REGRESSION MODEL.   
 
 
 
