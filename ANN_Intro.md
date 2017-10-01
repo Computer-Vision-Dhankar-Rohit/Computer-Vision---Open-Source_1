@@ -112,15 +112,15 @@ I site certain examples below :-
 Thus we dont deal with PERECPTRON's.   
 #
 Perceptron_Image_1: 
-![alt text](../Basics_Neuralnet/images_own/Perceptron_1.png "Perceptron_Image_1")
+![alt text](../Basics_Neuralnet/screen_captures/Perceptron_1.png "Perceptron_Image_1")
 #
 
 Perceptron_Image_2: 
-![alt text](../Basics_Neuralnet/images_own/Perceptron_2.jpg "Perceptron_Image_2")
+![alt text](../Basics_Neuralnet/screen_captures/Perceptron_2.jpg "Perceptron_Image_2")
 #  
 
 Perceptron_Image_3: 
-![alt text](../Basics_Neuralnet/images_own/Perceptron_3.jpg "Perceptron_Image_3")
+![alt text](../Basics_Neuralnet/screen_captures/Perceptron_3.jpg "Perceptron_Image_3")
 #  
 
 #  
