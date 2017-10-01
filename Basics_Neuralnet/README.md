@@ -1,6 +1,14 @@
 ### R Images 
 
 #
+SCREEN_SHOT_1: 
+![alt text](../master/screen_captures/R_4.png "SCREEN_SHOT_1")
+#
+
+SCREEN_SHOT_2: 
+![alt text](../master/screen_captures/R_1.jpg "SCREEN_SHOT_2")
+#  
+
  
 
 R_Image_1: 
