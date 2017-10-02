@@ -9,7 +9,8 @@
 - AZURE - revoscalepy , [face-api](https://docs.microsoft.com/en-us/azure/cognitive-services/face/quickstarts/python)  etc. 
 
 - LOGISTIC REGRESSION - Sigmoid or Binomial Logistic Regression . Classify Response variable into - TWO classes. 
-- SOFTMAX REGRESSION  - Multinominal Logistic Regression. Classify Response variable into - more than TWO classes. 
+- SOFTMAX REGRESSION  - Multinominal Logistic Regression. Classify Response variable into - more than TWO classes. The SOFTMAX is a generalization of the SIGMOID - as it can be used for any incident of - more than TWO classes of the Dependent variable. Further reading - [Softmax - GeeksforGeeks.org](http://www.geeksforgeeks.org/softmax-regression-using-tensorflow/)  
+
 - 
 - 
  
