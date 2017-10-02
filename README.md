@@ -1,7 +1,29 @@
+### Computer Vision - Pattern Recognition. 
+
+### Probable Tech Stack / Analytics Models and Algorithms , being used :- 
+
+- ANN - Artificial Neural Networks 
+- Open_CV
+- DLIB
+- TENSORFLOW
+- AZURE - revoscalepy , [face-api](https://docs.microsoft.com/en-us/azure/cognitive-services/face/quickstarts/python)  etc. 
+
+- LOGISTIC REGRESSION - Sigmoid or Binomial Logistic Regression . Classify Response variable into - TWO classes. 
+- SOFTMAX REGRESSION  - Multinominal Logistic Regression. Classify Response variable into - more than TWO classes. 
+- 
+- 
+ 
+
+
+#
+
+
+#
+
 ### Computer Vision with OpenCV and DLIB   
 #
 Initial experiments mostly with curated code from OpenCV and DLIB examples .   
-None of this code or examples are related to any client engagement.  
+### DISCLAIMER -- None of this code or examples are related to any client engagement.  
 #
 ### Pedestrian Detection 
 
