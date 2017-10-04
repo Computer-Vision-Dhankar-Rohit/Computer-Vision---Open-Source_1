@@ -71,10 +71,13 @@ print(net <- neuralnet(AND+OR~Var1+Var2+Var3, binary_df, hidden=0,rep=10, err.fc
 # rep ( Repetitions of ANN) ==> TEN.
 # act.fct ==> 
 # err.fct ==> Differentiable FUNC used for Calculating ERROR. Usually - "ce" or "sse"
-# Where -- "sse" == Sum of Squared Errors - Similar to Logistic Regression . 
-# "ce" == 
+# Where -- "sse" == Sum of Squared Errors - Similar to Linear Regression . 
+# "sse" Used for ANN for REGRESSION Tasks , Not Classification. 
+# "ce" == "cross-entropy" , used for Classification tasks. 
 #
-#
+# Plotting Functions --- 
+## plot.nn for plotting of the neural network.
+## gwplot for plotting of the generalized weights.
 # 
 
 #
