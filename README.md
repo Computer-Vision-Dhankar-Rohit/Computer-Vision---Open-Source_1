@@ -6,6 +6,7 @@
 - Open_CV
 - DLIB
 - TENSORFLOW
+- OPENFACE - [Face recognition library](https://github.com/cmusatyalab/openface) [OPENFACE - Licensing](https://github.com/cmusatyalab/openface#licensing)
 - AZURE - revoscalepy , [face-api](https://docs.microsoft.com/en-us/azure/cognitive-services/face/quickstarts/python)  etc. 
 
 - LOGISTIC REGRESSION - Sigmoid or Binomial Logistic Regression . Classify Response variable into - TWO classes. 

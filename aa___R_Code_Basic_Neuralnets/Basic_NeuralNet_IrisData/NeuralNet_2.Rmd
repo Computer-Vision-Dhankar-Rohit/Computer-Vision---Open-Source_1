@@ -1,0 +1,138 @@
+---
+title: "Basic NeuralNet -2"
+output:
+  pdf_document: default
+  html_notebook: default
+  html_document: default
+urlcolor: blue
+---
+
+
+```{r}
+library(neuralnet)
+
+
+
+```
+
+
+```{r}
+## Below chunks of code - SOURCE --- CRAN Examples - Package - library(neuralnet)
+#
+# Set Seed -- ensure reproducible results 
+
+set.seed(123)
+#
+
+AND <- c(rep(0,7),1)
+OR <- c(0,rep(1,7))
+
+print(AND)
+print(OR)
+
+
+
+```
+
+
+
+
+```{r}
+
+
+#binary_df <- data.frame(expand.grid(c(0,1), c(0,1), c(0,1),c(0,1)), AND, OR) # 16 OBS of 6 Variables 
+binary_df <- data.frame(expand.grid(c(0,1), c(0,1), c(0,1)), AND, OR) # Original - 8 Obs of 5 Variables 
+
+print(binary_df)
+
+# Numeric inputs prefeered - ANN does not like FACTOR INPUT 
+# Features , thus we look at the STRUCTURE of DF. 
+
+str(binary_df)
+
+
+# https://stat.ethz.ch/R-manual/R-devel/library/base/html/expand.grid.html
+
+```
+
+
+
+
+```{r}
+
+print(net <- neuralnet(AND+OR~Var1+Var2+Var3, binary_df, hidden=0,rep=10, err.fct="ce", linear.output=FALSE))
+
+# Calling help on - ?neuralnet()
+# "AND+OR~Var1+Var2+Var3," ==> FORMULA - a symbolic description of the model to be fitted.x
+# AND + OR        ==> RESPONSE or DEPENDENT VARIABLES (BINOMIAL Classification)
+# Var1+Var2+Var3  ==> INDEPENDENT VARIABLES
+# DATAFRAME       ==> binary_df 
+# hidden ( # of Hidden Neurons in each Layer) ==> ZERO in this case. 
+# rep ( Repetitions of ANN) ==> TEN.
+# act.fct ==> 
+# err.fct ==> Differentiable FUNC used for Calculating ERROR. Usually - "ce" or "sse"
+# Where -- "sse" == Sum of Squared Errors - Similar to Logistic Regression . 
+# "ce" == 
+#
+#
+# 
+
+#
+
+
+
+
+```
+
+
+
+
+
+```{r}
+
+```
+
+
+
+
+
+```{r}
+
+```
+
+
+
+
+```{r}
+
+```
+
+
+
+
+```{r}
+
+```
+
+
+
+
+
+```{r}
+
+```
+
+
+
+
+
+```{r}
+
+```
+
+
+
+
+```{r}
+
+```

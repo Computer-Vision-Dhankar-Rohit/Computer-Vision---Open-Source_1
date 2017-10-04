@@ -89,6 +89,25 @@ We look at some of these basic questions and try to answer them briefly ...
 - What is COST FUNCTION ? 
 - How to MINIMIZE COST FUNC. How to calculate DERIVATIVE ? 
 
+### The TYPES of ACTIVATION 
+
+- Threshold :- Out put is either ZERO or ONE. 
+- Sigmoid :- Output is either ZERO or ONE. 
+- Hyperbolic Tangent :- Output is either MINUS ONE or PLUS ONE. 
+
+#
+The inputs to the artificial neuron may correspond to raw data values, or in deeper architectures, may be outputs from preceding artificial neurons. The transfer function sums all the inputs together (cumulative inputs). If the summed input values reach a specified threshold, the activation function generates an output signal (all or nothing). The output signal then moves to a raw output or other neurons depending on specific ANN architecture.
+[Source Wiki- and ANN-Image](https://commons.wikimedia.org/wiki/File%3AArtificialNeuronModel_english.png) 
+#
+As seen in our learning experiment and the ANN code provided here - .... [LINK TO OWN ANN] (../master/) . The neuralnet package defaults to random initial weight values, for reproducibility we set a seed and construct the network.  
+ We have added three additional arguments for the classification ANN using the neuralnet package, linear.output, err.fct, and likelihood.  
+ Setting the linear.output to FALSE and the err.fct to “ce” indicates that we are performing a classification, and forces the model to output what we may interpret as a probability of each observation belonging to RESPONSE VARIABLE CLASS.  
+ For a Classification ANN - ```err.fct=“ce” == cross-entropy error metric``` is better than SSE.  
+The SUM OF SQUARED ERRORS = ```err.fct="sse"``` , usually used for regression problems.  
+We set - ```likelihood=TRUE``` , see the AIC and BIC metrics.  
+#
+
+
 ### The XNOR Hypothesis 
 An example where both the INDEPENDENT Variables or FEATURES (X1 and X2) and the DEPENDENT or RESPONSE variables (y)  are CATEGORICAL BINARY. TRUE = 1 or FALSE =0 kind.  
 
