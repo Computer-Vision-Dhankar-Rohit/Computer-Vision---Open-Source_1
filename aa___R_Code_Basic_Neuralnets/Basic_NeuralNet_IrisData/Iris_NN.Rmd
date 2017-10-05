@@ -44,6 +44,9 @@ samp<-c(sample(1:50,25), sample(51:100,25), sample(101:150,25))
 #Building ANN
 library(neuralnet)
 
+## First ANN 
+set.seed(123)
+
 nn_iris<-neuralnet(setosa + versicolor + virginica ~ Sepal.Length + Sepal.Width + Petal.Length
 + Petal.Width,
 trainData[samp,], hidden = c(5,5), threshold = 0.01,
@@ -55,7 +58,93 @@ err.fct = "sse", act.fct = "logistic")
 plot(nn_iris)
 nn_iris
 
+# STEPS == 11032 
+# ERROR == 0.010194
+
+
 ```
+
+
+
+```{r}
+
+set.seed(123)
+
+## ANN - 2 
+
+
+nn_iris_1<-neuralnet(setosa + versicolor + virginica ~ Sepal.Length + Sepal.Width + Petal.Length + Petal.Width,
+trainData[samp,], hidden = c(5,3), threshold = 0.01, stepmax = 1e+05, algorithm = "rprop+", 
+err.fct = "sse", act.fct = "logistic",rep=5 , linear.output = FALSE) ## Added -- rep=="5" , hidden == c(5,3)
+
+
+#Plotting the Model
+#
+plot(nn_iris_1,col.out = "red")
+nn_iris_1
+
+### Seems setting seed - does not work - keep getting different 
+# STEPS and ERROR as seen below -- 
+
+# STEPS == 1614
+# ERROR == 0.01052 
+
+
+# STEPS == 1938
+# ERROR == 0.003109
+
+
+# STEPS == 446
+# ERROR == 0.00107
+
+
+# Seen in the PLOT :- 
+#
+# Black lines are connections between each layer,
+# Figures seen on connections are weights , 
+# The Circles with Figure 1 in them and the blue lines show "bias terms".
+# 
+
+
+
+```
+
+
+```{r}
+
+
+set.seed(123)
+
+## ANN - 3 
+
+
+nn_iris_2<-neuralnet(setosa + versicolor + virginica ~ Sepal.Length + Sepal.Width + Petal.Length + Petal.Width,
+trainData[samp,], hidden = c(5,3,3), threshold = 0.01, stepmax = 1e+05, algorithm = "rprop+", 
+err.fct = "sse", act.fct = "logistic",rep=3 , linear.output = FALSE) ## Added -- rep=="3" , hidden == c(5,3,3)
+
+
+#Plotting the Model
+#
+plot(nn_iris_2,col.entry="blue",col.hidden="green",col.out = "red")
+nn_iris_2
+
+### Seems setting seed - does not work - keep getting different 
+# STEPS and ERROR as seen below -- 
+
+# STEPS == 168
+# ERROR == 0.001692
+
+
+# Seen in the PLOT :- 
+#
+# Black lines are connections between each layer,
+# Figures seen on connections are weights , 
+# The Circles with Figure 1 in them and the blue lines show "bias terms".
+# 
+
+```
+
+
 
 
 
