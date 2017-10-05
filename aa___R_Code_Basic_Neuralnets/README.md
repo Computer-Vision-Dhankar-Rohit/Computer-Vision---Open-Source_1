@@ -1,3 +1,6 @@
+
+
+
 ### R Images 
 
 #  
@@ -18,4 +21,11 @@ R_Image_4:
 ![alt text](../aa___R_Code_Basic_Neuralnets/images_own/R_3.jpg "R_Image_4")
 #  
 
+R_Image_5: 
+![alt text](../aa___R_Code_Basic_Neuralnets/images_own/R_5.png "R_Image_5")
+#  
+
+R_Image_6: 
+![alt text](../aa___R_Code_Basic_Neuralnets/images_own/R_5.png "R_Image_6")
+#  
 
